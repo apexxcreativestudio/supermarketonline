@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | FreshMart Sri Lanka</title>
+    <meta name="description" content="Complete your FreshMart order and send it instantly via WhatsApp." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f766e'/%3E%3Cpath d='M18 22h28l-3 20H21z' fill='%23fff'/%3E%3Ccircle cx='25' cy='46' r='3' fill='%23f59e0b'/%3E%3Ccircle cx='39' cy='46' r='3' fill='%23f59e0b'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="./index.html">FreshMart</a>
+        <nav class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#categories">Categories</a>
+          <a href="./products.html">Products</a>
+          <a href="./cart.html">Cart</a>
+        </nav>
+        <a class="cart-link" href="./cart.html">
+          Cart <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Checkout</p>
+          <h1>Place your order in seconds</h1>
+          <p>Your order will be shared instantly with FreshMart on WhatsApp.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container checkout-layout">
+          <form id="checkout-form" class="checkout-form">
+            <h3>Customer details</h3>
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" required />
+            </label>
+            <label>
+              Address
+              <textarea name="address" rows="3" required></textarea>
+            </label>
+            <label>
+              City
+              <input type="text" name="city" required />
+            </label>
+            <button class="btn btn-primary full-width" type="submit">Order via WhatsApp</button>
+          </form>
+
+          <aside class="cart-summary">
+            <h3>Order summary</h3>
+            <div id="checkout-items" class="summary-box"></div>
+            <div id="checkout-total" class="summary-box"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div>
+          <h3>FreshMart Sri Lanka</h3>
+          <p>Trusted by households across Sri Lanka.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>
